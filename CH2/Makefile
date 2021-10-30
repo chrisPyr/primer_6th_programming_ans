@@ -1,33 +1,32 @@
-CXX = g++
-CFLAGS = -O3 -Wall -Wextra
-.PHONY: 1 2 3 4 5 6 7 clean
+CXX = clang++
+CFLAGS = std=c++17 -O3 -Wall -Wextra
+.PHONY: 2_1 2_2 2_3 2_4 2_5 2_6 2_7 clean
 
 all:
-	@echo "please use **make x**(x=1 ... 7) to specify which ans"
-1: 2_1.cpp
-	@$(CXX) $(CFALGS) -o 2_1 $<
-	@./2_1
-2: 2_2.cpp
-	@$(CXX) $(CFALGS) -o 2_2 $<
-	@./2_2
-3: 2_3.cpp
-	@$(CXX) $(CFALGS) -o 2_3 $<
-	@./2_3
-4: 2_4.cpp
-	@$(CXX) $(CFALGS) -o 2_4 $<
-	@./2_4
-5: 2_5.cpp
-	@$(CXX) $(CFALGS) -o 2_5 $<
-	@./2_5
-6: 2_6.cpp
-	@$(CXX) $(CFALGS) -o 2_6 $<
-	@./2_6
-7: 2_7.cpp
-	@$(CXX) $(CFALGS) -o 2_7 $<
-	@./2_7
+	@echo "please use **make 2_id** (id = 1...7) to specify which ans"
+2_1: 2_1.cpp
+	@$(CXX) $(CFALGS) -o $@.out $<
+	@./$@.out
+2_2: 2_2.cpp
+	@$(CXX) $(CFALGS) -o $@.out $<
+	@./$@.out
+2_3: 2_3.cpp
+	@$(CXX) $(CFALGS) -o $@.out $<
+	@./$@.out
+2_4: 2_4.cpp
+	@$(CXX) $(CFALGS) -o $@.out $<
+	@./$@.out
+2_5: 2_5.cpp
+	@$(CXX) $(CFALGS) -o $@.out $<
+	@./$@.out
+2_6: 2_6.cpp
+	@$(CXX) $(CFALGS) -o $@.out $<
+	@./$@.out
+2_7: 2_7.cpp
+	@$(CXX) $(CFALGS) -o $@.out $<
+	@./$@.out
 
 clean:
-	@$(RM) *.o 2_1 2_2 2_3 2_4 2_5 2_6 2_7
-
+	@$(RM) *.out
 
 
