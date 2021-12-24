@@ -1,7 +1,7 @@
 CXX=clang++
 CXXFLAGS= -std=c++17 -O3 -Wall -Wextra
 
-.PHONY: clean 4_1
+.PHONY: clean 4_*
 
 all:
 	@echo "Please enter the number of excercise e.g. make 4_1"
