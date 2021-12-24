@@ -14,7 +14,7 @@ all:
 	@./4_2.out
 4_3: 4_3.cpp
 	@${CXX} ${CXXFLAGS} -o $@.out $^
-	@./4_4.out
+	@./4_3.out
 4_4: 4_4.cpp
 	@${CXX} ${CXXFLAGS} -o $@.out $^
 	@./4_4.out
