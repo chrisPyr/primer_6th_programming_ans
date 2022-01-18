@@ -27,6 +27,15 @@ all:
 4_7: 4_7.cpp
 	@${CXX} ${CXXFLAGS} -o $@.out $^
 	@./4_7.out
+4_8: 4_8.cpp
+	@${CXX} ${CXXFLAGS} -o $@.out $^
+	@./4_8.out
+4_9: 4_9.cpp
+	@${CXX} ${CXXFLAGS} -o $@.out $^
+	@./4_9.out
+4_10: 4_10.cpp
+	@${CXX} ${CXXFLAGS} -o $@.out $^
+	@./4_10.out
 
 clean:
 	${RM} *.out
