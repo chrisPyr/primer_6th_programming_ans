@@ -17,7 +17,7 @@ all:
 	@./5_3.out
 5_4: 5_4.cpp
 	@${CXX} ${CXXFLAGS} -o $@.out $^
-	@./5_5.out
+	@./5_4.out
 5_5: 5_5.cpp
 	@${CXX} ${CXXFLAGS} -o $@.out $^
 	@./5_5.out
