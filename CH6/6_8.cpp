@@ -13,6 +13,7 @@ int main(){
       num++;
     }
     cout<<"There are "<<num<<" characters in this file\n";
+    fin.close(); //remember to close file
   }else{
     cout<<"Cannot open file \"6_8.txt\"\n";
   }

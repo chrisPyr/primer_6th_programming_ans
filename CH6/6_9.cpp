@@ -42,9 +42,10 @@ int main(){
         }
       }
     }
+
+    fin.close(); //Remember to close file
   }else{
     cout<<"Cannot open file \"6_9.txt\"\n";
   }
-
   return 0;
 }
