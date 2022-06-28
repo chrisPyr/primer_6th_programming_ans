@@ -6,9 +6,6 @@ CXXFLAGS= -std=c++17 -O3 -Wall -Wextra
 all:
 	@echo "Please enter the number of excercise e.g. make 9_1"
 
-9_1: 9_1.cpp
-	@${CXX} ${CXXFLAGS} -o $@.out $^
-	@./9_1.out
 9_2: 9_2.cpp
 	@${CXX} ${CXXFLAGS} -o $@.out $^
 	@./9_2.out

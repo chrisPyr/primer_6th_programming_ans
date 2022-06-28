@@ -1,5 +1,5 @@
 CXX:=clang++
-FLAGS:=--std=c++17
+FLAGS:=--std=c++17 -O3 -Wall -Wextra
 SRC:=$(wildcard *.cpp)
 
 default: 9_1
