@@ -7,7 +7,7 @@ default: 10_1
 10_1: $(SRC)
 	$(CXX) $^ -o $@
 
-.PHONY: clean
+.PHONY: clean run
 clean:
 	$(RM) ./10_1
 run:
